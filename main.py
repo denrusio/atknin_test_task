@@ -5,7 +5,7 @@ from time import sleep
 assert os.environ.get('USER_LOGIN') != None, "USER_LOGIN must be set"
 assert os.environ.get('USER_PASSWORD') != None, "USER_PASSWORD must be set"
 
-chromedriver = "/usr/bin/chromedriver"
+chromedriver = os.environ["webdriver_path"]
 os.environ["webdriver.chrome.driver"] = chromedriver
 driver = webdriver.Chrome(chromedriver)
 driver.get("https://esia.gosuslugi.ru/profile/user/personal")
