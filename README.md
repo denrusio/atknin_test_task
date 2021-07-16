@@ -1,5 +1,5 @@
 # Install
-`sudo apt-get install chromium-chromedriver`
+`sudo apt-get install chromium-chromedriver`  
 `pip install selenium`  
 Create .env file with settings:  
 `USER_LOGIN=yourEmail@example.com`  
